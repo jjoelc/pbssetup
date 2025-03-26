@@ -148,13 +148,6 @@ If there was a newer kernel included in the updates, you should consider
 rebooting the system to apply the updated kernel. (The reboot button can
 be found under "Administration -\> Server Status -\>Reboot".)
 
-Also note that if the "No Subscription" popup bothers you that much, you
-can install [Proxmox Fake
-Subscription](https://github.com/Jamesits/pve-fake-subscription) This
-tricks your PBS into believing it has a valid subscription, thus
-preventing the pop up. It does **not** enable you to use the Enterprise
-repository for updates, though.
-
 ### Storage/ZFS Setup
 
 In this simple example, we will use the PBS web interface to setup a 3
