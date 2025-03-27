@@ -187,15 +187,12 @@ width="400" query="?direct&400"}
 - Select the drives to be used by placing a checkmark in the box next to
   each listing.
 - Choose the RAID level.
-
-<!-- -->
-
-        * This is a big topic, and beyond the scope of this document, but generally speaking, if you have 6 or fewer drives, you probably want to choose one of the RAIDZ options. If you have a higher number of drives, you probably want one of the "dRAID" options.
-        * There are as many ways of configuring drives for ZFS as there are drives. For more complex setups, you will need to use the command line for setup. The ProxMox GUI only supports some basic, most common options.
-        * RAIDZ - Similar to RAID5 - uses one drive for parity
-        * RAIDZ2 - Uses 2 drives for parity
-        * RAIDZ3 - Uses 3 drives for parity
-        * dRAID levels - distributes the parity information across all available drives. The higher levels allow for a higher number of drives to fail simultaneously without data loss.
+  - This is a big topic, and beyond the scope of this document, but generally speaking, if you have 6 or fewer drives, you probably want to choose one of the RAIDZ options. If you have a higher number of drives, you probably want one of the "dRAID" options.
+   - There are as many ways of configuring drives for ZFS as there are drives. For more complex setups, you will need to use the command line for setup. The ProxMox GUI only supports some basic, most common options.
+   - RAIDZ - Similar to RAID5 - uses one drive for parity
+   - RAIDZ2 - Uses 2 drives for parity
+   - RAIDZ3 - Uses 3 drives for parity
+   - dRAID levels - distributes the parity information across all available drives. The higher levels allow for a higher number of drives to fail simultaneously without data loss.
 
 You will choose `ZRAID` for this example. Do not worry about defining
 the "order" for the drives. This will be automatically determined in
